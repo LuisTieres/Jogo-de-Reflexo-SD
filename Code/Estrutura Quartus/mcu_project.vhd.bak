@@ -1,0 +1,35 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity mcu_project is
+	PORT(
+		CLK   : in  STD_LOGIC;							-- Clock proveniente da placa
+		RST   : in  STD_LOGIC;							-- RST associado ao push-button 0 (KEY(0))
+		STEP  : in  STD_LOGIC;							-- STEP associado ao push-button 1 (KEY(1))
+		SW    : in  STD_LOGIC_VECTOR(7 downto 0);	-- Chaves de entrada (interface com mundo externo)
+		LEDR  : out STD_LOGIC_VECTOR(7 downto 0);	-- LEDs de saída com resultado do
+		LED_S	: out STD_LOGIC
+	);
+end;
+
+
+architecture design of mcu_project is
+
+	-- sinais associados à ALU
+	signal regA, regB 	: STD_LOGIC_VECTOR(7 downto 0);
+	signal alu_result 	: STD_LOGIC_VECTOR(7 downto 0);
+	signal alu_op 			: STD_LOGIC_VECTOR(2 downto 0);
+
+begin
+	
+	-- Unidade Lógica e Aritmética
+	ALU0: entity work.alu
+	port map(
+		ALUControl	=> alu_op,
+		Src_A 		=> regA,
+		Src_B 		=> regB,
+		ALU_out		=> alu_result
+	);
+	
+end;

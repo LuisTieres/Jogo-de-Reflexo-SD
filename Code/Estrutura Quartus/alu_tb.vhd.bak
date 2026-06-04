@@ -1,0 +1,26 @@
+-- Projeto didático de um microcontrolador
+-- ELT029 - Laboratório de Sistemas Digitais
+-- Professor Tiago C. Magalhães
+-- test bench
+
+-- bibliotecas
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity alu_tb is
+
+end;
+
+-- descrição
+architecture design of alu_tb is
+
+	signal ALU_result : STD_LOGIC_VECTOR(3 downto 0);
+
+begin
+
+	ALU_result <= Src_A and Src_B 	when ALUControl = "010" else
+					  Src_A or 	Src_B 	when ALUControl = "011" else
+					  "0000";
+
+end;	

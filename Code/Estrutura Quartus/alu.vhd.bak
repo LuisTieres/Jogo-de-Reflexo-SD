@@ -1,0 +1,49 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity alu is
+	port(
+		ALUControl 	: in 	STD_LOGIC_VECTOR(2 downto 0);
+		Src_A 		: in 	STD_LOGIC_VECTOR(7 downto 0);
+		Src_B			: in 	STD_LOGIC_VECTOR(7 downto 0);
+		ALU_out 		: out STD_LOGIC_VECTOR(7 downto 0)
+	);
+end;
+
+architecture design of alu is
+
+	signal ALU_result : STD_LOGIC_VECTOR(7 downto 0);
+
+begin
+
+	process(Src_A, Src_B, ALUControl)
+	begin
+
+		case ALUControl is
+			-- Operação aritmética - soma
+			when "000" =>
+				ALU_result <= std_logic_vector(unsigned(Src_A) + unsigned(Src_B));
+			-- Operação aritmética - subtração
+			when "001" =>
+				ALU_result <= std_logic_vector(unsigned(Src_A) - unsigned(Src_B)) ;
+			-- Operação lógica E
+			when "010" =>
+				ALU_result <= Src_A and Src_B;
+			-- Operação lógica OU
+			when "011" =>
+				ALU_result <= Src_A or Src_B;
+			-- Espaço para a criação de outras funções
+			--when "011" =>
+			--	ALU_result <= Src_A;
+			-- 
+			when others =>
+				ALU_result <= (others => '0');
+
+		end case;
+	end process;
+	
+	-- atribui resultado da operação à saída
+	ALU_out <= ALU_result;
+
+end;

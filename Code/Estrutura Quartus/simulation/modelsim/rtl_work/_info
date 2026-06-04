@@ -1,0 +1,134 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tiago/Downloads/001.MCU_ALU/001.MCU_ALU/simulation/modelsim
+Ealu
+Z1 w1774362034
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/tiago/Downloads/001.MCU_ALU/001.MCU_ALU/alu.vhd
+Z6 FC:/Users/tiago/Downloads/001.MCU_ALU/001.MCU_ALU/alu.vhd
+l0
+L11
+Vmca4AoON4FL?>;PeJMj@@1
+!s100 D[[cYm_Qgk>7nHd?QaYl]2
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1774362099
+!i10b 1
+Z9 !s108 1774362099.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/tiago/Downloads/001.MCU_ALU/001.MCU_ALU/alu.vhd|
+Z11 !s107 C:/Users/tiago/Downloads/001.MCU_ALU/001.MCU_ALU/alu.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Adesign
+R2
+R3
+R4
+Z14 DEx4 work 3 alu 0 22 mca4AoON4FL?>;PeJMj@@1
+l25
+L21
+V1_I^67@emB0i0HQi0:Ylc1
+!s100 :Z_58kFNHeTjcJM<Xz0CG3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ealu_tb
+R1
+R3
+R4
+R0
+Z15 8C:/Users/tiago/Downloads/001.MCU_ALU/001.MCU_ALU/alu_tb.vhd
+Z16 FC:/Users/tiago/Downloads/001.MCU_ALU/001.MCU_ALU/alu_tb.vhd
+l0
+L11
+V0IgfeMeG]>P5=^7F=a<KP0
+!s100 oZ;`F[A;gJc;>6m0dEFPR0
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/tiago/Downloads/001.MCU_ALU/001.MCU_ALU/alu_tb.vhd|
+Z18 !s107 C:/Users/tiago/Downloads/001.MCU_ALU/001.MCU_ALU/alu_tb.vhd|
+!i113 1
+R12
+R13
+Atest
+R2
+R14
+R3
+R4
+DEx4 work 6 alu_tb 0 22 0IgfeMeG]>P5=^7F=a<KP0
+l22
+L14
+V>XK]KKf<W6V5D_[`XW;bX2
+!s100 ?V>I3MAzT_:F?XXCgE[C50
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Emcu_project
+R1
+R2
+R3
+R4
+R0
+Z19 8C:/Users/tiago/Downloads/001.MCU_ALU/001.MCU_ALU/mcu_project.vhd
+Z20 FC:/Users/tiago/Downloads/001.MCU_ALU/001.MCU_ALU/mcu_project.vhd
+l0
+L5
+VVhNSCO7?KNhXaIf[fM@d_0
+!s100 K1XeQFcAjZ_Hbb<E3DQ461
+R7
+31
+R8
+!i10b 1
+R9
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/tiago/Downloads/001.MCU_ALU/001.MCU_ALU/mcu_project.vhd|
+Z22 !s107 C:/Users/tiago/Downloads/001.MCU_ALU/001.MCU_ALU/mcu_project.vhd|
+!i113 1
+R12
+R13
+Adesign
+R14
+R2
+R3
+R4
+DEx4 work 11 mcu_project 0 22 VhNSCO7?KNhXaIf[fM@d_0
+l20
+L13
+V4<8T[>ol;4MjE`;iH3FYI2
+!s100 cRf<j?V3N2dV`0C?jJY2<3
+R7
+31
+R8
+!i10b 1
+R9
+R21
+R22
+!i113 1
+R12
+R13

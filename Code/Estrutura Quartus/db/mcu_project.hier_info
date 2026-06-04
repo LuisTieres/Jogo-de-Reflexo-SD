@@ -1,0 +1,58 @@
+|mcu_project
+SW[0] => alu:ALU0.ALUControl[0]
+SW[1] => alu:ALU0.ALUControl[1]
+SW[2] => alu:ALU0.ALUControl[2]
+SW[3] => alu:ALU0.Src_A[0]
+SW[4] => alu:ALU0.Src_A[1]
+SW[5] => alu:ALU0.Src_A[2]
+SW[6] => alu:ALU0.Src_B[0]
+SW[7] => alu:ALU0.Src_B[1]
+SW[8] => alu:ALU0.Src_B[2]
+SW[9] => ~NO_FANOUT~
+LEDR[0] << alu:ALU0.ALU_out[0]
+LEDR[1] << alu:ALU0.ALU_out[1]
+LEDR[2] << alu:ALU0.ALU_out[2]
+LEDR[3] << alu:ALU0.ALU_out[3]
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+
+
+|mcu_project|alu:ALU0
+ALUControl[0] => Mux0.IN10
+ALUControl[0] => Mux1.IN10
+ALUControl[0] => Mux2.IN10
+ALUControl[0] => Mux3.IN10
+ALUControl[1] => Mux0.IN9
+ALUControl[1] => Mux1.IN9
+ALUControl[1] => Mux2.IN9
+ALUControl[1] => Mux3.IN9
+ALUControl[2] => Mux0.IN8
+ALUControl[2] => Mux1.IN8
+ALUControl[2] => Mux2.IN8
+ALUControl[2] => Mux3.IN8
+Src_A[0] => ALU_result.IN0
+Src_A[0] => ALU_result.IN0
+Src_A[1] => ALU_result.IN0
+Src_A[1] => ALU_result.IN0
+Src_A[2] => ALU_result.IN0
+Src_A[2] => ALU_result.IN0
+Src_A[3] => ALU_result.IN0
+Src_A[3] => ALU_result.IN0
+Src_B[0] => ALU_result.IN1
+Src_B[0] => ALU_result.IN1
+Src_B[1] => ALU_result.IN1
+Src_B[1] => ALU_result.IN1
+Src_B[2] => ALU_result.IN1
+Src_B[2] => ALU_result.IN1
+Src_B[3] => ALU_result.IN1
+Src_B[3] => ALU_result.IN1
+ALU_out[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+ALU_out[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+ALU_out[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+ALU_out[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
